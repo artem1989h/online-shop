@@ -54,5 +54,12 @@
         "image": "tesla-roadster.jpg",
         "description": "Best sports car in the World",
         "price": 249999.99
+    },
+    {
+        "id": "9",
+        "title": "Tesla 3",
+        "image": "tesla3.jpg",
+        "description": "Best budget car in the World",
+        "price": 30000
     }
 ]

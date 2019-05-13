@@ -4,15 +4,22 @@ class ProductList {
     fetch(productsUrl)
       .then(result => result.json())
       .then(products => {
+        products.forEach(product => product.price = product.price*2);
         this.products = products;
         this.renderProducts(renderContainer, products);
         this.addEventListeners();
       });
   }
+  
+ 
+  
   getProductById(id) {
     return this.products.find(el => el.id === id);
   }
   renderProducts(container, products) {
+   
+    products.forEach(product => product.price)
+    
     let productListDomString = '';
     products.forEach(product => {
       productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
